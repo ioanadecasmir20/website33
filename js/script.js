@@ -121,23 +121,6 @@ document.addEventListener("DOMContentLoaded", () => {
   courseSearch?.addEventListener("input", filterCourses);
   courseFilter?.addEventListener("change", filterCourses);
 
-  /* Contact form message */
-  const contactForm = document.getElementById("contactForm");
-
-  contactForm?.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    const formMessage = document.querySelector(".form-message");
-
-    if (formMessage) {
-      formMessage.textContent =
-        "Thank you. Your enquiry is ready to be sent. Please connect this form to your email or booking system when publishing.";
-      formMessage.style.color = "#111";
-    }
-
-    contactForm.reset();
-  });
-
   /* Back to top button */
   const backTop = document.querySelector(".back-top");
 
